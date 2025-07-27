@@ -36,7 +36,6 @@ class TaskController extends Controller
         return redirect()->route('tasks.index')->with('success', 'Zadanie utworzone.');
     }
 
-    // Szczegóły
     public function show(Task $task)
     {
         $histories = $task->histories()->with('user')->latest()->get();

@@ -33,8 +33,6 @@
 
 ## Przemyślenia i uwagi
 
-> (Uwaga: poniższy tekst możesz edytować/rozbudować, w zależności od tego, ile chcesz przekazać – zostawiłem to jako Twoją wypowiedź, tylko poprawioną językowo.)
-
 Rozważałem użycie TailwindCSS, jednak technologia ta nie została wskazana w specyfikacji projektu, dlatego postawiłem na czysty CSS. W większych projektach Tailwind byłby zdecydowanie moim wyborem, ponieważ znacząco przyspiesza pracę nad UI.
 
 Jeśli chodzi o strukturę backendu – zauważyłem pewien dysonans między zasadami SOLID a podejściem opartym na Eloquent ORM. Modele w Laravelu bezpośrednio łączą logikę biznesową z bazą danych, co w większych systemach prowadzi do mieszania warstw. Osobiście preferuję wzorzec Repository, który pozwala na rozdzielenie odpowiedzialności i lepsze testowanie, jednak ze względu na skalę projektu uznałem, że jego implementacja byłaby przesadą.

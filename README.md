@@ -4,13 +4,15 @@
 
 1. Sklonuj repozytorium:
 ```bash
-git clone https://github.com/twoj-uzytkownik/twoje-repo.git
-cd twoje-repo
+git clone https://github.com/SanctuaryMirror/GrupaRBR.git
+cd GrupaRBR
+cd laravel
 ```
 
-2. Skopiuj plik środowiskowy i ustaw konfigurację bazy danych:
+2. Skopiuj plik środowiskowy i wygeneruj klucz aplikacji:
 ```bash
 cp .env.example .env
+php artisan key:generate
 ```
 3. Edytuj .env i upewnij się, że masz ustawione:
 ```bash
@@ -92,11 +94,11 @@ http://localhost:8080
 
 Dane testowego użytkownika 1:
 
-Email: 
+Email:
 ```bash 
 test@test.test
 ```
-Hasło: 
+Hasło:
 ```bash
 test123
 ```
